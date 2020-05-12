@@ -1,0 +1,20 @@
+Project 1
+(Vacation Project)
+
+Goal: Making web and mobile application
+
+Title: Using Artificial Intelligence(AI), find out which animal face do I look like with celebrity picture
+
+Start date: 2020-05-11
+
+Code: Python
+
+
+Crawler.py : Getting image for AI(Requests and Beautifulsoup libraries)
+
+Animal Face Korean Celebrities
+Puppy: Kang Daniel(EXO), Paek Hyun(EXO), Park Bogyum,  Song JoongKi, Park Boyung, Lee Minjung, Han Jimin
+Cat: Hwang Minhyun(101), Si Wumin(EXO), Kang Dongwon, Lee Jongsuk, Lee Junki, Han YaeSeul, Yoo Inyung, Ahn Sohui
+Bear: Ma Dongsuk, Jo Jinwoong, Jo Seaho, Ahn Jaehong, Seul Ki(Redvelvet)
+Dinosaurs: Yoon Dujun, Lee Minki, Kim Woobin, Gong U, Song Jihyo, Kim Ajoong, Shin Saekyung, Lee Minjung
+Rabbit: Jung Gook(BTS), Barbie(IKON), Park Jihoon(101), Su Ho(EXO), Na Yun(TWICE), IU, Suji
