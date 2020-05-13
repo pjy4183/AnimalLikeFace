@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
@@ -61,9 +64,9 @@
         <button type="button" onclick="predict()" class="predict-image">Click Here to Predict</button><br>
       <button type="button" onclick="removeUpload()" class="mt-3 remove-image">Remove <span class="image-title">Uploaded Image</span></button>
     </div>
+    
   </div>
 </div>
-<div id="webcam-container"></div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -78,7 +81,7 @@
     const URL = "https://teachablemachine.withgoogle.com/models/kbaelNady/";
 
     let model, webcam, labelContainer, maxPredictions;
-
+  
     // Load the image model and setup the webcam
     async function init() {
         const modelURL = URL + "model.json";
@@ -97,6 +100,7 @@
     }
 
 
+      
     // run the webcam image through the image model
     async function predict() {
         // predict can take in an image, video or canvas html element
@@ -168,6 +172,8 @@
         }
     }
 </script>
+
+            
 <script>
     function readURL(input) {
   if (input.files && input.files[0]) {
@@ -185,6 +191,7 @@
 
     reader.readAsDataURL(input.files[0]);
     init()
+
 
   } else {
     removeUpload();
